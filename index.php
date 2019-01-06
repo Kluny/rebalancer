@@ -88,13 +88,13 @@
             <div class="col">
                 <label for="symbol-<?php echo $k; ?>">Fund Symbol </label>
                 <input id="symbol-<?php echo $k; ?>" placeholder="eg. TDB900"
-                       name="funds[<?php echo $k; ?>][symbol]"
+                       name="funds[<?php echo $k; ?>]['symbol']"
                        value="<?php echo htmlentities( filter_var( $k ), FILTER_SANITIZE_STRING ); ?>">
             </div>
             <div class="col">
                 <label for="amount-<?php echo $k; ?>">Current Amount </label>
                 <input id="amount-<?php echo $k; ?>" type="number" placeholder="$0.00"
-                       name="funds[<?php echo $k; ?>][amount]" value="<?php echo htmlentities( floatval( $fund ) ); ?>">
+                       name="funds[<?php echo $k; ?>]['amount']" value="<?php echo htmlentities( floatval( $fund ) ); ?>">
             </div>
 
         </div>
